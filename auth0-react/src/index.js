@@ -12,7 +12,9 @@ ReactDOM.render(
     <Auth0Provider
       domain="dev-sswrulestest.au.auth0.com"
       clientId="n0fXmSe4bvA9oOHCS0lreq6FyrTAAHGk"
+      audience="https://functions.sample"
       redirectUri={window.location.origin}
+      scope="openid email profile"
       >
       <App />
     </Auth0Provider>
