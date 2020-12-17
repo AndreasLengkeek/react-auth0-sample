@@ -15,8 +15,9 @@ function App() {
       console.log(`secure token retrieved: ${token}`);
 
       const response = await fetch(
-        `http://localhost:7071/api/HttpHelloWorld`,
+        `http://localhost:7071/api/HttpHelloWorldFunction`,
         {
+          method: "POST",
           headers: {
             Authorization: `Bearer ${token}`
           }
